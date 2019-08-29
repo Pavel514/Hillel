@@ -2,12 +2,27 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title> Урок 1</title>
+  <title> Задания Гилель ДАвиденко П.</title>
  </head>
 <body>
     <script>
-       console.log("Привет Мир!")
+     var key;
+     var TextLet = "лет";  
+     var age = prompt("Укажите Ваш возраст?",100);
+     if  ((age < 11) || (age > 14)) {
+         switch (age % 10) {
+             case 1 : TextLet = 'год';
+             break;
+             case 2 : TextLet = 'года';
+             break;
+             case 3 : TextLet = 'года';
+             break;
+             case 4 : TextLet = 'года';
+             break;
+         };
+     };
+     result = confirm("Вам " + age + TextLet + ' !');
     </script>
-    <p> Задание урок 1 </p>
+    <p> Задание урок 3 </p>
 </body>
 </html>
